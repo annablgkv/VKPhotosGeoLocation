@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>VKPhotosGeoLocation</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+function initMap() {
+  /* Координаты Ростова-на-Дону */
+  var myLatLng = {lat: 47.14, lng: 39.42};
+  /* Создание карты отцентрованной на заданных координатах */
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: myLatLng
+  });
+
+  /* PLACEHOLDER */
+}
+
+    </script>
+    <!-- Здесь добавляем API ключ -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAtlS0oBjntoPBvOSJr1PpfjGdUl6Dv9ec&signed_in=true&callback=initMap"></script>
+  </body>
+</html>
